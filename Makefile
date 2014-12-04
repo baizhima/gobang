@@ -17,4 +17,4 @@ computerplayer.o: player.o computerplayer.cpp computerplayer.h player.h
 	g++ -Wall -c computerplayer.cpp
 
 clean:
-	rm -f gomoku *.o
+	rm -f gomoku main.o chessboard.o player.o humanplayer.o computerplayer.o
