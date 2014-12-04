@@ -1,8 +1,7 @@
 #include "computerplayer.h"
 
-ComputerPlayer::ComputerPlayer(int id, bool aiStatus)
+ComputerPlayer::ComputerPlayer(int id, bool aiStatus) : Player(id)
 {
-    playerId = id;
     ai = aiStatus;
 }
 
@@ -18,9 +17,6 @@ void ComputerPlayer::play(ChessBoard &chessBoard) {
 }
 
 
-int ComputerPlayer::getPlayerId() {
-    return playerId;
-}
 
 void ComputerPlayer::decision(ChessBoard &chessBoard, int &i, int &j) {
     if (ai)

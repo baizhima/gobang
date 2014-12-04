@@ -1,17 +1,18 @@
 #ifndef COMPUTERPLAYER_H
 #define COMPUTERPLAYER_H
 
-#include "chessboard.h"
+#include "player.h"
 
-class ComputerPlayer
+
+class ComputerPlayer: public Player
 {
 public:
     ComputerPlayer(int, bool);
     void play(ChessBoard &);
-    int getPlayerId();
+
 
 private:
-    int playerId;
+
     bool ai;
 
     void decision(ChessBoard &, int &, int &);

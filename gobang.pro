@@ -18,9 +18,11 @@ TEMPLATE = app
 SOURCES += main.cpp \
     chessboard.cpp \
     humanplayer.cpp \
-    computerplayer.cpp
+    computerplayer.cpp \
+    player.cpp
 
 HEADERS += \
     chessboard.h \
     humanplayer.h \
-    computerplayer.h
+    computerplayer.h \
+    player.h

@@ -1,8 +1,8 @@
 #include "humanplayer.h"
 
-HumanPlayer::HumanPlayer(int id)
+HumanPlayer::HumanPlayer(int id):Player(id)
 {
-    playerId = id;
+
 }
 
 void HumanPlayer::play(ChessBoard &chessBoard) {
@@ -38,7 +38,8 @@ void HumanPlayer::play(ChessBoard &chessBoard) {
     chessBoard.setChess(playerId, i, j);
 
 }
-
+/*
 int HumanPlayer::getPlayerId() {
     return playerId;
 }
+*/
