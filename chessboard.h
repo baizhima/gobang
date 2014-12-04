@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstdlib>    /* srand, rand */
+#include <cassert>    /* assert */
 #include <ctime>      /* time */
 using namespace std;
 
@@ -17,6 +18,7 @@ public:
     void printBoard();
     void printPrompt(int playerId);
     void setChess(int playerId, int i, int j);
+    char getChess(int i, int j);
     bool regret();
     int getWinner();
     void randomTest();
@@ -25,6 +27,7 @@ private:
 
     bool fiveInARow(int i, int j);
     void printBoardInfo();
+
     char grid[BOARD_SIZE][BOARD_SIZE];
     int nrounds;
     int nmoves;

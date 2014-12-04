@@ -76,7 +76,11 @@ void ChessBoard::setChess(int playerId, int i, int j) {
             nmoves -= 1;
         nrounds = nmoves / 2;
     }
+}
 
+char ChessBoard::getChess(int i, int j) {
+    assert(i >= 0 && i < BOARD_SIZE && j >= 0 && j < BOARD_SIZE);
+    return grid[i][j];
 }
 
 bool ChessBoard::regret() {

@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
     ChessBoard chessBoard;
     HumanPlayer human(1);
-    ComputerPlayer computer(2);
+    ComputerPlayer computer(2, true);
 
     while (true) {
         chessBoard.printBoard();

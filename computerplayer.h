@@ -6,12 +6,22 @@
 class ComputerPlayer
 {
 public:
-    ComputerPlayer(int);
+    ComputerPlayer(int, bool);
     void play(ChessBoard &);
     int getPlayerId();
+
 private:
     int playerId;
+    bool ai;
+
     void decision(ChessBoard &, int &, int &);
+    void randomDecision(ChessBoard &, int &, int &);
+    void aiDecision(ChessBoard &, int &, int &);
+    int horizontalVal(ChessBoard &, int, int);
+    int verticalVal(ChessBoard &, int, int);
+    int majorDiagonalVal(ChessBoard &, int, int);
+    int minorDiagonalVal(ChessBoard &, int, int);
+    int calculateScore(int, int, int);
 };
 
 #endif // COMPUTERPLAYER_H
