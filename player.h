@@ -8,7 +8,7 @@ class Player
 public:
     Player(int);
     int getPlayerId();
-    virtual void play(ChessBoard &){};
+    virtual void play(ChessBoard &) {}
 protected:
     int playerId;
 };
